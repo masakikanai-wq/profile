@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
+}
+
+header {
+    background: #e3e3e3;
+    color: #333;
+    text-align: center;
+    padding-top: 64px;
+    padding-bottom: 32px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.profile {
+    margin: 100px auto;
+}
+
+.container {
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align : center
+}
+
+.icon img{
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.info h1 {
+    font-weight: normal;
+    font-size: 30px;
+    margin: 0;
+}
+
+.info h2 {
+    font-weight: normal;
+    font-size: 20px;
+    margin: 0;
+}
+
+.info h3 {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.btn {
+    text-decoration: none;
+    background: #555;
+    color: #fff;
+    width: 200px;
+    display: block;
+    margin: 50px auto 0;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+#more {
+    width: 300px;
+    height: 500px;
+    background-color: #e3e3e3;
+    margin: 30px auto;
+    padding: 40px 10px;
+    display: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+  }
+
+.bold {
+    font-weight: bold;
+}
+
+#contact {
+    background-color: #e3e3e3;
+    padding: 64px 0;
+    text-align : center
+}
+
+#contact h2 {
+    font-weight: normal;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+#contact h3 {
+    font-weight: normal;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+footer {
+    padding: 64px 0;
+    background: #555;
+}
+
+footer p {
+    text-align: center;
+    color: #fff;
+}
