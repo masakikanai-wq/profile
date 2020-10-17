@@ -2,65 +2,150 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8">
-        <title>kanai official website</title>
-        <meta name="description" content="kanai official website">
-        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>かないのオフィシャルサイト</title>
+        <meta name="description" content="かないのオフィシャルサイトです">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
 
     <body>
        <header>
+           <div class="container">
 
+           </div>
         </header>
     
+        <!-- プロフィール -->
         <section class="profile">
             <div class="container">
                 <div class="icon">
-                    <img src="IMG_0778.JPG" alt="かないのプロフィール画像です" width="200" height="200">
+                    <img src="img/profile2.JPG" alt="かないのプロフィール画像です" width="200" height="200">
                 </div>
 
                 <div class="info">
-                    <h1>金井 真輝</h1>
-                    <h2>Masaki Kanai</h2>
-                    <h3>B.O.D. May 1st, 1986</h3>
+                    <p>金井 真輝</p>
+                    <rt>Masaki Kanai</rt>
+                    <p class="bod">B.O.D. May 1st, 1986</p>
                 </div>
 
+                <!-- DOMでプロフィールのON/OFFを実装 -->
                 <button class="btn" type="button" onclick="openProfile()">more</button>
                 <div id="more">
-                    <ul>
-                        <li>SAiTech 2期生</li>
-                        <li>from 2020/10/10</li>
-                        <br>
-                        <br>
-                        <li class="bold">趣味</li>
-                        <li>ゴルフ</li>
-                        <li>サッカー観戦</li>
-                        <li>プログラミング</li>
-                        <br>
-                        <br>
-                        <li class="bold">目標</li>
-                        <li>エンジニアに転職する</li>
-                        <li>Webサービス作成</li>
-                        <br>
-                        <br>
-                        <li>＼コメント／</li>
-                        <li>これからよろしく<br>お願いします！</li>
-                        <br>
-                        <br>
-                    </ul>
+                    <div class="comment-box">
+                        <p>SAiTech 2期生</p>
+                        <p>from 2020/10/10</p>
+                    </div>
+                    <div class="comment-box">
+                        <p class="bold">趣味</p>
+                        <p>ゴルフ</p>
+                        <p>サッカー観戦</p>
+                        <p>プログラミング</p>
+                    </div>
+                    <div class="comment-box">
+                        <p class="bold">目標</p>
+                        <p>エンジニアに転職する</p>
+                        <p>Webサービス作成</p>
+                    </div>
+                    <div class="comment-box">
+                        <p>＼コメント／</p>
+                        <p>これからよろしく<br>お願いします！</p>
+                    </div>
                     <button type="button" onclick="closeProfile()">close</button>
                 </div>  
             </div>
         </section>
 
-        <section id="contact">
-            <h2>CONTACT</h2>
-            <br>
-            <h3>090-xxxx-yyyy</h3>
-            <h3>m.kanai.51@gmail.com</h3>
+        <!-- レスポンシブ練習 ４→2 -->
+        <section id="works-wrapper">
+            <div class="container">
+                <div class="works">
+                    <div class="work">
+                        <p>work 1</p>
+                    </div>
+                    <div class="work-w">
+                        <p>work 2</p>
+                    </div>
+                    <div class="work">
+                        <p>work 3</p>
+                    </div>
+                    <div class="work-w">
+                        <p>work 4</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <!-- 日本語と英語切り替える練習 -->
+        <section id="career-wrapper">
+            <div class="container">
+                <div class="career">
+                    <div id="japanese">
+                        <p>大学卒業後、化粧品の研究開発に７年間携わる。<br>転職し、現在は都内にて自社のマーケティングやWebサービスの開発を行う。</p>
+                        <p>2020年10月よりSAiTechにてエンジニアを目指してプログラミング学習をスタート。</p>
+                    </div>
+                    <!-- デフォルトでは見えてないところ -->
+                    <div id="english">
+                        <p>Thank you for visiting my website!</p>
+                        <p>I have just started studing Programing to be Engineers.</p>
+                        <p>Let's work hard together!</p>
+                    </div>
+                </div>
+                <div class="career-btn">
+                    <button class="jpn" id="translate" onclick="jpnToEng()">English</button>
+                    <button class="eng" id="translate" onclick="engToJpn()">Japanese</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- レスポンシブ練習 -->
+        <section id="text-wrapper">
+            <div class="container">
+                <div class="texts">
+                    <div class="text-w">
+                        <p>responsive 1</p>
+                    </div>
+                    <div class="text">
+                        <p>responsive 2</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ３枚の写真配置 -->
+        <section id="photo-wrapper">
+            <div class="container">
+                <div class="photos">
+                    <div class="photo">
+                        <img src="img/img1.JPG" alt="#" width="200" height="200">
+                        <p>photo 1</p>
+                    </div>
+                    <div class="photo">
+                        <img src="img/img1.JPG" alt="#" width="200" height="200">
+                        <p>photo 2</p>
+                    </div>
+                    <div class="photo">
+                        <img src="img/img1.JPG" alt="#" width="200" height="200">
+                        <p>photo 3</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 連絡先 -->
+        <section id="contact">
+            <div class="container">
+                <h2>CONTACT</h2>
+                <br>
+                <h3>090-xxxx-yyyy</h3>
+                <h3>m.kanai.51@gmail.com</h3> 
+            </div>
+        </section>
+
+        <!-- フッター -->
        <footer>
-           <p>kanai official website</p>
+           <div class="container">
+               <p>kanai official website</p>
+           </div>
        </footer>
 
        <script src="myscript.js"></script>
