@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-size: 16px;
@@ -9,8 +13,9 @@ header {
     background: #e3e3e3;
     color: #333;
     text-align: center;
-    padding-top: 64px;
+    padding-top: 32px;
     padding-bottom: 32px;
+    width: 100%;
 }
 
 .btn:hover {
@@ -22,7 +27,7 @@ header {
 }
 
 .container {
-    width: 500px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     text-align : center
@@ -33,21 +38,15 @@ header {
     margin-bottom: 30px;
 }
 
-.info h1 {
-    font-weight: normal;
+.info p {
     font-size: 30px;
     margin: 0;
 }
 
-.info h2 {
+.info .bod {
     font-weight: normal;
-    font-size: 20px;
-    margin: 0;
-}
-
-.info h3 {
-    font-weight: normal;
-    font-size: 15px;
+    font-size: 15px; 
+    margin-top: 24px;
 }
 
 .btn {
@@ -63,11 +62,19 @@ header {
 
 #more {
     width: 300px;
-    height: 500px;
+    height: 600px;
     background-color: #e3e3e3;
     margin: 30px auto;
     padding: 40px 10px;
     display: none;
+}
+
+#more p {
+    margin: 0;
+}
+
+#more .comment-box {
+    margin-bottom: 48px;
 }
 
 ul {
@@ -79,11 +86,130 @@ ul {
     font-weight: bold;
 }
 
-#contact {
-    background-color: #e3e3e3;
-    padding: 64px 0;
-    text-align : center
+#works-wrapper {
+    height: 200px;
+    background-color: #f7f7f7;
 }
+
+.work {
+    float: left;
+    width: 25%;
+    height: 200px;
+    background-color: #555;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-w {
+    float: left;
+    width: 25%;
+    height: 200px;
+    background-color: #e3e3e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#career-wrapper {
+    height: 200px;
+    background-color: #fff;
+}
+
+#text-wrapper {
+    height: 200px;
+    background-color: #555;
+}
+
+.text {
+    float: left;
+    width: 50%;
+    height: 200px;
+    background-color: #555;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-w {
+    float: left;
+    width: 50%;
+    height: 200px;
+    background-color: #e3e3e3;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* キャリアについて */
+#career-wrapper .container {
+    margin-top: 80px;
+}
+
+.jpn {
+    /* display: block; */
+    margin: 0 auto;
+}
+
+#japanese {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+
+#english {
+    width: 70%;
+    margin: 0 auto;
+    display: none;
+}
+
+.career {
+    margin-bottom: 40px;
+}
+
+.career-btn {
+    margin: 0 auto;
+}
+
+/* 写真について */
+#photo-wrapper {
+    height: 300px;
+}
+
+#photo-wrapper .container {
+    margin-top: 80px;
+}
+
+.photos {
+    display: flex;
+    justify-content: center;
+}
+
+.photo img{
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.photo {
+    float: left;
+    width: 25%;
+}
+
+#contact {
+    height: 200px;
+    background-color: #e3e3e3;
+    padding-top: 40px;
+}
+
+/* #contact .container {
+    padding: 32px 0;
+    text-align : center;
+    justify-content: center;
+    align-items: center;
+} */
 
 #contact h2 {
     font-weight: normal;
@@ -97,12 +223,87 @@ ul {
     margin: 0 auto;
 }
 
-footer {
-    padding: 64px 0;
+footer .container {
+    padding: 32px 0;
     background: #555;
+    width: 100%;
 }
 
 footer p {
     text-align: center;
     color: #fff;
+}
+
+/* タブレット向けレイアウト */
+@media (max-width: 1024px) {
+    #photo-wrapper {
+        height: 900px;
+    }
+
+    .photos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .photo {
+        width: 100%;
+    }
+
+    .photo img{
+        border-radius: 50%;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+}
+
+/* スマホ向けレイアウト */
+@media (max-width: 670px) {
+    #works-wrapper {
+        height: 400px;
+        background-color: #f7f7f7;
+    }
+
+    .work {
+        float: left;
+        width: 50%;
+        height: 200px;
+        background-color: #555;
+    }
+    
+    .work-w {
+        float: left;
+        width: 50%;
+        height: 200px;
+        background-color: #e3e3e3;
+    }
+
+    .text {
+        float: left;
+        width: 100%;
+        height: 150px;
+        background-color: #555;
+    }
+
+    .text-w {
+        float: left;
+        width: 100%;
+        height: 150px;
+        background-color: #e3e3e3;
+    }
+
+    #contact {
+        height: 200px;
+        background-color: #e3e3e3;
+        padding-top: 60px;
+    }
+
+    #text-wrapper {
+        height: 300px;
+        background-color: #555;
+    }
+
+    #career-wrapper {
+        height: 300px;
+    }
+
 }
